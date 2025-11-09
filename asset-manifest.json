@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dados-ibge/static/css/main.e6c13ad2.css",
-    "main.js": "/dados-ibge/static/js/main.bcd48f55.js",
-    "static/js/453.a26ed20b.chunk.js": "/dados-ibge/static/js/453.a26ed20b.chunk.js",
-    "index.html": "/dados-ibge/index.html",
-    "main.e6c13ad2.css.map": "/dados-ibge/static/css/main.e6c13ad2.css.map",
-    "main.bcd48f55.js.map": "/dados-ibge/static/js/main.bcd48f55.js.map",
-    "453.a26ed20b.chunk.js.map": "/dados-ibge/static/js/453.a26ed20b.chunk.js.map"
+    "main.css": "/ibge_learning_view/static/css/main.e6c13ad2.css",
+    "main.js": "/ibge_learning_view/static/js/main.3998da4c.js",
+    "static/js/453.a26ed20b.chunk.js": "/ibge_learning_view/static/js/453.a26ed20b.chunk.js",
+    "index.html": "/ibge_learning_view/index.html",
+    "main.e6c13ad2.css.map": "/ibge_learning_view/static/css/main.e6c13ad2.css.map",
+    "main.3998da4c.js.map": "/ibge_learning_view/static/js/main.3998da4c.js.map",
+    "453.a26ed20b.chunk.js.map": "/ibge_learning_view/static/js/453.a26ed20b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.bcd48f55.js"
+    "static/js/main.3998da4c.js"
   ]
 }
