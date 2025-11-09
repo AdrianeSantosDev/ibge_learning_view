@@ -2,6 +2,7 @@
   "name": "ibge_learning_view",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://adrianesantosdev.github.io/ibge_learning_view",
   "dependencies": {
     "@nivo/bar": "^0.99.0",
     "@testing-library/dom": "^10.4.1",
