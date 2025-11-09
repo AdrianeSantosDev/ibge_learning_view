@@ -82,43 +82,43 @@ export default function DadosIBGE() {
       });
   }, []);
 
-  const [dadosGraph, setDadosGraph] = useState([]);
-  const [keys, setKeys] = useState([]);
+  // const [dadosGraph, setDadosGraph] = useState([]);
+  // const [keys, setKeys] = useState([]);
 
-  useEffect(() => {
-    const _dadosGraph = [];
+  // useEffect(() => {
+  //   const _dadosGraph = [];
 
-    dados.forEach((dado) => {
-      dado.nivel_list.forEach((nivel) => {
-        const motivos = nivel.motivos.map((m) => ({
-          nome: m.motivo,
-          valor: parseFloat(String(m.valor).replace(",", ".")) || 0,
-        }));
+  //   dados.forEach((dado) => {
+  //     dado.nivel_list.forEach((nivel) => {
+  //       const motivos = nivel.motivos.map((m) => ({
+  //         nome: m.motivo,
+  //         valor: parseFloat(String(m.valor).replace(",", ".")) || 0,
+  //       }));
 
-        // soma total do nível (para transformar em %)
-        const total = motivos.reduce((acc, m) => acc + m.valor, 0) || 1;
+  //       // soma total do nível (para transformar em %)
+  //       const total = motivos.reduce((acc, m) => acc + m.valor, 0) || 1;
 
-        const motivosPercent = Object.fromEntries(
-          motivos.map((m) => [m.nome, (m.valor / total) * 100])
-        );
+  //       const motivosPercent = Object.fromEntries(
+  //         motivos.map((m) => [m.nome, (m.valor / total) * 100])
+  //       );
 
-        _dadosGraph.push({
-          id: `${dado.ano}-${nivel.nivel}`,
-          ano: dado.ano,
-          nivel: nivel.nivel,
-          ...motivosPercent,
-        });
-      });
-    });
+  //       _dadosGraph.push({
+  //         id: `${dado.ano}-${nivel.nivel}`,
+  //         ano: dado.ano,
+  //         nivel: nivel.nivel,
+  //         ...motivosPercent,
+  //       });
+  //     });
+  //   });
 
-    const newKeys =
-      _dadosGraph.length > 0 ? Object.keys(_dadosGraph[0]).filter((k) => !["id", "ano", "nivel"].includes(k)) : [];
+  //   const newKeys =
+  //     _dadosGraph.length > 0 ? Object.keys(_dadosGraph[0]).filter((k) => !["id", "ano", "nivel"].includes(k)) : [];
 
-    setKeys(newKeys);
-    setDadosGraph(_dadosGraph);
+  //   setKeys(newKeys);
+  //   // setDadosGraph(_dadosGraph);
 
-    console.log("✅ _dadosGraph normalizado por nível:", _dadosGraph);
-  }, [dados]);
+  //   console.log("✅ _dadosGraph normalizado por nível:", _dadosGraph);
+  // }, [dados]);
 
 
 
